@@ -1,25 +1,20 @@
 #!/usr/bin/python3
+"""
+more class base
+"""
 
-"""Defines a Rectangle subclass Square."""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
+"""
+Square class
+"""
+
+
 class Square(Rectangle):
-    """Represent a square."""
-
+    """ Square Class """
     def __init__(self, size):
-        """Initialize a new square.
-        Args:
-            size (int): The size of the new square.
-        """
-        self.integer_validator("size", size)
-        super().__init__(size, size)
+        """ instantiation with size """
         self.__size = size
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-
+        super().__init__(self.__size, self.__size)
